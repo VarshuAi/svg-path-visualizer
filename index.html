@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Path Visualizer — Glassmorphism Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-bg"></div>
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo-row">
+                <span class="logo-emoji">📐</span>
+                <div class="title-col">
+                    <h1>SVG Path Visualizer</h1>
+                    <p class="tagline">Instantly render, scale, and visualize vector lines and shapes from direct SVG path strings.</p>
+                </div>
+            </div>
+            <div class="badge">utilities</div>
+        </header>
+
+        <main class="workspace-card">
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div>
+                    <label>Path Value (d)</label>
+                    <textarea id="svg-d" style="width: 100%; height: 200px;">M 10 80 Q 52.5 10 95 80 T 180 80</textarea>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: center; background: #0c0c14; border-radius: 12px; border: 1px solid var(--border);">
+                    <svg width="200" height="200" viewBox="0 0 200 200">
+                        <path id="svg-render-path" fill="none" stroke="cyan" stroke-width="4"></path>
+                    </svg>
+                </div>
+            </div>
+        
+        </main>
+        
+        <footer class="app-footer">
+            <p>Created as a premium portfolio piece by <a href="https://github.com/VARSHAN69" target="_blank">@VARSHAN69</a></p>
+        </footer>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
