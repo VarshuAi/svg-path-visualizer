@@ -38,7 +38,7 @@ version: 1.0
 type: Repository
 author: VarshuAi
 description: >
-  Instantly render, scale, and visualize vector lines and shapes from direct SVG path strings.
+  name: svg-path-visualizer version: 1.0 type: Repository author: VarshuAi description: >   Instantly render, scale, and visualize vector lines and shapes from direct SVG path strings. primary_tech: CSS
 primary_tech: CSS
 ```
 
